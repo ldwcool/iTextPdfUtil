@@ -17,12 +17,12 @@ import java.util.Map;
 /**
  * pdf 生成例子
  *
- * @author ldw
+ * @author ldwcool
  */
 public class Demo {
 
     public static void main(String[] args) {
-        PdfExportDocument document = PdfExportDocument.getInstance(FileUtil.getOutputStream("H://demo.pdf"));
+        PdfExportDocument document = PdfExportDocument.getInstance(FileUtil.getOutputStream("D:/demo.pdf"));
         document.open();
 
         // 添加一级标题
@@ -83,7 +83,7 @@ public class Demo {
         chapter.add(table1);
 
         // 添加一级标题
-        chapter = document.addLevel1Title("第三章 表单类型表格");
+        chapter = document.addLevel1Title("第四章 表单类型表格");
         paragraph = PdfExportUtil.getMainTextParagraph("以下是关于表单类型表格例子描述");
         chapter.add(paragraph);
         // 添加二级标题
@@ -135,7 +135,7 @@ public class Demo {
         section.add(table4);
 
         // 添加一级标题
-        chapter = document.addLevel1Title("第三章 列表类型表格");
+        chapter = document.addLevel1Title("第五章 列表类型表格");
         paragraph = PdfExportUtil.getMainTextParagraph("以下是关于列表类型表格例子描述");
         chapter.add(paragraph);
         // 添加二级标题
